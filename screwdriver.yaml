@@ -2,15 +2,15 @@ shared:
     image: node:18
 
 jobs:
-    jobA:
+    A:
         requires: [~commit]
         steps:
             - start: echo ok
-    main:
-        requires: [~commit]
+    B:
+        requires: [~sd@12754:X]
         steps:
             - start: echo ok
-    join:
-        requires: [~sd@12754:sub]
+    C:
+        requires: [~sd@12754:Y]
         steps:
             - start: echo ok
