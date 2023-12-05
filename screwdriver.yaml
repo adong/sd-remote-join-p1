@@ -6,7 +6,12 @@ jobs:
         requires: [~commit]
         steps:
             - start: echo ok
-#    join:
-#        requires: [sd@12754:sub]
-#        steps:
-#            - start: echo ok
+    join:
+        requires: [sd@12754:sub]
+        steps:
+            - start: echo ok
+
+    join2:
+        requires: [sd@12754:sub2]
+        steps:
+            - start: echo ok
