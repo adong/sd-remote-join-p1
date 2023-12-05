@@ -1,0 +1,8 @@
+shared:
+    image: node:18
+
+jobs:
+    main:
+        requires: [~commit]
+        steps:
+            - start: echo ok
