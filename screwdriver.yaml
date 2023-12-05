@@ -11,6 +11,10 @@ jobs:
         steps:
             - start: echo ok
     C:
-        requires: [~sd@12754:Y]
+        requires: [D, ~sd@12754:Y]
+        steps:
+            - start: echo ok
+    D:
+        requires: [~commit]
         steps:
             - start: echo ok
